@@ -1,0 +1,37 @@
+{
+    "general":  {
+        "wrongSizeMessage": "Your device does not meet minimum screen resolution requirements",
+        "preloadRing": "Loading ring...",
+        "offline": "Connection to server is lost",
+	    "serverlost": "Server is unavailable",
+        "game": { "sm": {"x": "0", "y": "0", "size": "36" }, "hd": { "x": "-11", "y": "0", "size": "60" }, "text": "PLAY" },
+        "wrongResolution": "Your device does not support minimum screen resolution",
+        "wrongLoginParol": "Login and password do not match",
+        "loginInUse": "Your login and password are already in use",
+        "gameInUse": "Play ${GAME} not available! You have an unfinished Play ${CURRENT_GAME} (Events based on aircrafts coordinates).",
+        "moveToGame": "Go to Play 49",
+        "restoreConnection": "Restore server connection",
+	"systemplus": "System+",
+        "platformChoice": "HTML5 selected",
+        "sourceOfEventsMeteo":"Bets&Fever – Events based on meteorological data",
+        "sourceOfEventsAero":"Jets&Bets – Events based on aircrafts coordinates"
+    },
+    
+    "balance": {
+        "notEnoughCredits": "Not enough credits on your account",
+        "refreshBalance": "Replenish account balance"
+    },
+    
+    "buttons": {
+        "changeBetSubject": "Change\n\revent type",
+        "changePlatform": "Change platform",
+        "aero": "EVENTS BASED ON AIRCRAFTS COORDINATES",
+        "WEATHER": "EVENTS BASED ON METEOROLOGICAL DATA"
+    },
+
+    "errors": {
+	"balance.notEnoughCredits":"Not enough credits on your account",
+        "EventType.disabled": "${PARAM} not working",
+        "Game.disabled": "${PARAM} not working"
+    }
+}

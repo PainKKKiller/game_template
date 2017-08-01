@@ -1,0 +1,38 @@
+{
+    "general":  {
+        "wrongSizeMessage": "К сожалению, Ваше устройство не поддерживает минимальное разрешение игры",
+        "preloadRing": "загрузка ринга",
+        "offline": "Соединение с сервером потеряно",
+	    "serverlost": "Сервер недоступен",
+        "game": { "sm": {"x": "0", "y": "0", "size": "36" }, "hd": { "x": "-11", "y": "0", "size": "60" }, "text": "ИГРА" },
+        "wrongResolution": "К сожалению, Ваше устройство не поддерживает минимальное разрешение игры",
+        "wrongLoginParol": "Несоответствие пары логин-пароль",
+        "loginInUse": "Ваш логин и пароль уже используется",
+        "gameInUse": "Игра ${GAME} недоступна! У вас есть незавершенная игра ${CURRENT_GAME} События на основе координат воздушных судов",
+        "moveToGame": "Перейти к игре 49",
+        "restoreConnection": "Восстановить связь с сервером",
+	"systemplus": "Система+",
+        "platformChoice": "Выбрана платформа HTML5",
+        "sourceOfEventsMeteo":"Bets&Fever - События на основе метеорологических данных",
+        "sourceOfEventsAero":"Jets&Bets - События на основе координат воздушных судов"
+    },
+    
+    "balance": {
+        "notEnoughCredits": "На вашем счету недостаточно кредитов",
+        "refreshBalance": "обновить баланс"
+    },
+    
+    "buttons": {
+        "changeBetSubject": "Изменить\n\rтип событий",
+        "changePlatform": "Изменить платформу",
+        "aero": "СОБЫТИЯ НА ОСНОВЕ КООРДИНАТ ВОЗДУШНЫХ СУДОВ",
+        "WEATHER": "СОБЫТИЯ НА ОСНОВЕ МЕТЕОРОЛОГИЧЕСКИХ ДАННЫХ"
+    },
+    
+    "errors": {
+	"balance.notEnoughCredits":"Not enough credits on your account",
+        "EventType.disabled": "${PARAM} не работает",
+        "Game.disabled": "${PARAM} не работает"
+    }
+	
+}

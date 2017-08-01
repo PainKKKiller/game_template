@@ -1,0 +1,287 @@
+
+@font-face {
+    font-family: 'a_concepto';
+    src: url('../res/fonts/a_concepto_bold-webfont.svg') format('svg'),
+         url('../res/fonts/a_concepto_bold-webfont.woff2') format('woff2'),
+         url('../res/fonts/a_concepto_bold-webfont.woff') format('woff'),
+         url('../res/fonts/a_concepto_bold-webfont.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'liberation_serif';
+    src: url('../res/fonts/liberationserif-italic-webfont.svg') format('svg'),
+         url('../res/fonts/liberationserif-italic-webfont.woff2') format('woff2'),
+         url('../res/fonts/liberationserif-italic-webfont.woff') format('woff'),
+         url('../res/fonts/liberationserif-italic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'arialnarrow';
+    src: url('../res/fonts/arialnarrow-webfont-webfont.eot');
+    src: url('../res/fonts/arialnarrow-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../res/fonts/arialnarrow-webfont-webfont.svg#arialnarrow') format('svg')
+         url('../res/fonts/arialnarrow-webfont-webfont.woff2') format('woff2'),
+         url('../res/fonts/arialnarrow-webfont-webfont.woff') format('woff'),
+         url('../res/fonts/arialnarrow-webfont-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+/* the fix ! simply ADD this block BELOW the above block */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family: 'arialnarrow';
+            src: url('../res/fonts/arialnarrow-webfont-webfont.svg#arialnarrow') format('svg');
+    }
+}
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #D4D4D4;
+    height: 100%;
+    /*-webkit-font-smoothing: none;*/
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html:-ms-fullscreen {
+  width: 100%;
+}
+
+.game-wrapper {
+    height: 80%;
+    min-height: 634px;
+    width: 100%;
+    height: 100%;
+    min-width: 1126px;
+    position: relative;
+    overflow: hidden;
+}
+
+/*               Overlay                 */
+
+.overlay {
+    /*background-color: rgba(0, 0, 0, 0.3);*/
+    width: 170px;
+    height: 60px; 
+    position: absolute;
+    right: 10px;
+    top: 0;
+    z-index: 500;
+   /* pointer-events: none;*/
+}
+
+/*      Sound On / Off       */
+
+.sound input {
+    position: relative;
+    visibility: hidden;
+}
+
+.sound span {
+    width: 28px;
+    height: 27px;
+    display: block;
+    background: url("./../res/img/soundOn.png");
+    cursor: pointer;
+    position: absolute;
+    top: 7px;
+    right: 130px;
+   /* z-index: 500;*/
+}
+
+.sound input:checked + span {
+    background: url("./../res/img/soundOff.png");
+}
+
+/*      FullScreen On / Off       */
+
+.fullscreen input {
+    position: relative;
+    visibility: hidden;
+}
+
+.fullscreen span {
+    width: 28px;
+    height: 27px;
+    display: block;
+    background: url("./../res/img/full.png");
+    cursor: pointer;
+    position: absolute;
+    top: 7px;
+    right: 95px;
+    /*z-index: 501;*/
+}
+
+.fullscreen input:checked + span {
+    background: url("./../res/img/fullExit.png");
+}
+
+
+/*          ChooseBetSubject           
+
+.chooseBetSubject {
+    background-color: #D4D4D4;
+    width: 100%;
+    height: 768px; 
+    position: absolute;
+}
+
+.aircraft {
+    background: url('./../res/img/betsbets.png') center no-repeat;
+    width: 243px;
+    height: 276px;
+    position: absolute;
+    top: 150px;
+    left: 317px;
+    cursor: pointer;
+}
+
+.frame {
+    width: 1126px;
+    height: 634px;
+    position: absolute;
+    top: 20%;
+    left: 10%; 
+}
+
+.weather {
+    background: url('./../res/img/betsfever.png') center no-repeat;
+    width: 239px;
+    height: 274px;
+    position: absolute;
+    top: 150px;
+    left: 570px;
+    cursor: pointer;
+}
+
+.btnBigRed {
+    background-color: red;
+    color:white;
+    font-size: 16px;
+    border-radius: 7px;
+    text-transform: uppercase;
+    border: 0;
+    width: 175px;
+    height: 70px;
+    position: absolute;
+    top: 450px;
+    left: 475px;
+    cursor: pointer;
+}
+
+.btnBigRed:focus {
+    outline: 0;
+}
+
+.chooseBetSubject-txt {
+    font-size: 14px;
+    font-family: 'arialnarrow', arial;
+    font-weight: bold;
+    color:black;
+    text-transform: uppercase;
+    padding-top: 200px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+*/
+
+#game-container {
+    position: absolute;
+    min-width: 1126px;
+    min-height: 634px;
+    max-height: 1080px;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0;
+   /* background-color: #222222;*/
+    -webkit-font-smoothing: subpixel-antialiased !important;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility:    hidden;
+    -ms-backface-visibility:     hidden;
+    /* https://github.com/pixijs/pixi.js/issues/621 */
+}
+
+
+/* The Modal (background) */
+.modal {
+    /*display: none; /* Hidden by default */
+    position: absolute; /* Stay in place */
+    z-index: 9999999; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content Box */
+.modal-text {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px 40px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    width: 50%; 
+    color: red;
+    align-content: center;
+    z-index: 99999;
+    position: relative;
+}
+
+.modal-p {
+    text-align: center;
+}
+
+/* The Close Button */
+.close {
+    font-family: Arial;
+    color: #605c5c;
+    float: right;
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+	right: 5px;
+	text-align: center;
+	top: 5px;
+    width: 20px;
+    height: 20px;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 50%;
+	border: 1px solid black;
+}
+
+.close:hover,
+.close:focus {
+    cursor: pointer;
+}
+
+.modal-btn {
+    height:30px; 
+    width:200px; 
+    background-color: #FF0000;
+    display: block;
+    margin: 0 auto;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.invisible {
+    display: none;
+}
+
+ 
